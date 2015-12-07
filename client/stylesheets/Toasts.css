@@ -1,0 +1,28 @@
+#toasts {
+    position: fixed;
+
+    z-index: 2;
+
+    top: 5.5em;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+#toasts > div {
+    transition: opacity .5s linear !important;
+}
+
+.toasts-enter,
+.toasts-leave.toasts-leave-active {
+    opacity: 0;
+}
+
+.toasts-leave,
+.toasts-enter.toasts-enter-active {
+    opacity: 1;
+}
