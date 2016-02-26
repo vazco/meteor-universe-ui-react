@@ -3,8 +3,7 @@ import Content from './Content.jsx';
 import Header  from './Header.jsx';
 import Icon    from './Icon.jsx';
 import Message from './Message.jsx';
-
-const ReactCSSTransitionGroup = Npm.require('react-addons-css-transition-group');
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export const Toasts = React.createClass({
     displayName: 'Toasts',
