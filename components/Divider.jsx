@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Divider = React.createClass({
     displayName: 'Divider',
 

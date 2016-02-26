@@ -1,9 +1,10 @@
-import Content from './Content';
-import Header  from './Header';
-import Icon    from './Icon';
-import Message from './Message';
+import React from 'react';
+import Content from './Content.jsx';
+import Header  from './Header.jsx';
+import Icon    from './Icon.jsx';
+import Message from './Message.jsx';
 
-const ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+const ReactCSSTransitionGroup = Npm.require('react-addons-css-transition-group');
 
 export const Toasts = React.createClass({
     displayName: 'Toasts',
