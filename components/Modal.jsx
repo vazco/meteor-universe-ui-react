@@ -1,7 +1,5 @@
 import React from 'react';
 
-console.log(React);
-
 export const Modal = React.createClass({
     displayName: 'Modal',
 
