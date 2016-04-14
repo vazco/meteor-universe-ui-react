@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "react": {
-      "version": "0.14.7",
-      "resolved": "https://registry.npmjs.org/react/-/react-0.14.7.tgz",
+      "version": "0.14.8",
+      "resolved": "https://registry.npmjs.org/react/-/react-0.14.8.tgz",
       "from": "react@>=0.14.7 <0.15.0",
       "dependencies": {
         "envify": {
@@ -62,8 +62,8 @@
               "from": "loose-envify@>=1.0.0 <2.0.0",
               "dependencies": {
                 "js-tokens": {
-                  "version": "1.0.2",
-                  "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz",
+                  "version": "1.0.3",
+                  "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-1.0.3.tgz",
                   "from": "js-tokens@>=1.0.1 <2.0.0"
                 }
               }
