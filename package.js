@@ -1,11 +1,13 @@
 Package.describe({
     name: 'universe:ui-react',
     summary: 'UI components for UniCMS.',
-    version: '0.1.0',
+    version: '0.2.0',
     readme: 'README.md'
 });
 
 Package.onUse(function (api) {
+    api.versionsFrom('1.3.2.3');
+    
     api.use([
         'modules@0.5.0-modules.8',
         'ecmascript@0.4.0-modules.8',
@@ -15,25 +17,6 @@ Package.onUse(function (api) {
     Npm.depends({
         'react-addons-css-transition-group': '0.14.7'
     });
-
-    api.addFiles([
-        'index.js',
-
-        'components/Actions.jsx',
-        'components/AskModal.jsx',
-        'components/Button.jsx',
-        'components/Column.jsx',
-        'components/Container.jsx',
-        'components/Content.jsx',
-        'components/Divider.jsx',
-        'components/Grid.jsx',
-        'components/Header.jsx',
-        'components/Icon.jsx',
-        'components/Message.jsx',
-        'components/Modal.jsx',
-        'components/Modals.jsx',
-        'components/Toasts.jsx'
-    ]);
 
     api.addFiles([
         'client/stylesheets/_tools.css',
