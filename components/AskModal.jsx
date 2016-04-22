@@ -1,9 +1,10 @@
-import Actions from './Actions';
-import Button  from './Button';
-import Header  from './Header';
-import Icon    from './Icon';
-import Modals  from './Modals';
-import Modal   from './Modal';
+import React from 'react';
+import Actions from './Actions.jsx';
+import Button  from './Button.jsx';
+import Header  from './Header.jsx';
+import Icon    from './Icon.jsx';
+import Modals  from './Modals.jsx';
+import Modal   from './Modal.jsx';
 
 export const AskModal = React.createClass({
     displayName: 'AskModal',

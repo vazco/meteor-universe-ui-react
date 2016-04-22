@@ -1,8 +1,11 @@
+import React from 'react';
+import {findDOMNode} from 'react-dom';
+
 export const Modal = React.createClass({
     displayName: 'Modal',
 
     componentDidMount () {
-        const $modal = $(ReactDOM.findDOMNode(this));
+        const $modal = $(findDOMNode(this));
         const {
             visible,
             modal: {
@@ -25,11 +28,11 @@ export const Modal = React.createClass({
 
     componentDidUpdate (previousProps) {
         if (!this.props.visible && previousProps.visible) {
-            return $(ReactDOM.findDOMNode(this)).modal('hide');
+            return $(findDOMNode(this)).modal('hide');
         }
 
         if (this.props.visible && !previousProps.visible) {
-            return $(ReactDOM.findDOMNode(this)).modal('show');
+            return $(findDOMNode(this)).modal('show');
         }
     },
 

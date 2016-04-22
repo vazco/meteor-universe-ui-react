@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Modals = React.createClass({
     displayName: 'Modals',
 

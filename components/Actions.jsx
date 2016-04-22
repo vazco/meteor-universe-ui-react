@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Actions = React.createClass({
     displayName: 'Actions',
 

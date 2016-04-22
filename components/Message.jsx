@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const Message = React.createClass({
     displayName: 'Message',
 

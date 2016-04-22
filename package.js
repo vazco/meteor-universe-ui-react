@@ -7,26 +7,32 @@ Package.describe({
 
 Package.onUse(function (api) {
     api.use([
-        'universe:modules@0.6.7'
+        'modules@0.5.0-modules.8',
+        'ecmascript@0.4.0-modules.8',
+        'universe:utilities-react@1.0.0-beta1'
     ]);
 
-    api.addFiles([
-        'index.import.js',
+    Npm.depends({
+        'react-addons-css-transition-group': '0.14.7'
+    });
 
-        'components/Actions.import.jsx',
-        'components/AskModal.import.jsx',
-        'components/Button.import.jsx',
-        'components/Column.import.jsx',
-        'components/Container.import.jsx',
-        'components/Content.import.jsx',
-        'components/Divider.import.jsx',
-        'components/Grid.import.jsx',
-        'components/Header.import.jsx',
-        'components/Icon.import.jsx',
-        'components/Message.import.jsx',
-        'components/Modal.import.jsx',
-        'components/Modals.import.jsx',
-        'components/Toasts.import.jsx'
+    api.addFiles([
+        'index.js',
+
+        'components/Actions.jsx',
+        'components/AskModal.jsx',
+        'components/Button.jsx',
+        'components/Column.jsx',
+        'components/Container.jsx',
+        'components/Content.jsx',
+        'components/Divider.jsx',
+        'components/Grid.jsx',
+        'components/Header.jsx',
+        'components/Icon.jsx',
+        'components/Message.jsx',
+        'components/Modal.jsx',
+        'components/Modals.jsx',
+        'components/Toasts.jsx'
     ]);
 
     api.addFiles([
@@ -35,4 +41,6 @@ Package.onUse(function (api) {
         'client/stylesheets/AskModal.css',
         'client/stylesheets/Toasts.css'
     ], 'client');
+
+    api.mainModule('index.js');
 });
