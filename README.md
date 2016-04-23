@@ -25,7 +25,7 @@
 ### Modals
 #### Creating modal
 ```js
-import {Actions, Button, Content, Icon, Modal, Modals} from '{universe:ui-react}';
+import {Actions, Button, Content, Icon, Modal, Modals} from 'meteor/universe:ui-react';
 
 const ExampleModal = React.createClass({
     displayName: 'ExampleModal',
@@ -66,7 +66,7 @@ Modals.register({
 
 #### Managing modals
 ```js
-import {Modals} from '{universe:ui-react}';
+import {Modals} from 'meteor/universe:ui-react';
 
 // Somewhere in layout
 <Modals />
@@ -98,7 +98,7 @@ Modals.show('ask', {
 
 ### Toasts
 ```js
-import {Toasts} from '{universe:ui-react}';
+import {Toasts} from 'meteor/universe:ui-react';
 
 // Somewhere in layout
 <Toasts />
