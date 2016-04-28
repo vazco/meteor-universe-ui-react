@@ -14,7 +14,6 @@ Package.onUse(function (api) {
     ]);
 
     Npm.depends({
-        'react-dom': '0.14.6',
         'react-addons-css-transition-group': '0.14.7'
     });
 
@@ -24,5 +23,5 @@ Package.onUse(function (api) {
         'client/stylesheets/Toasts.css'
     ], 'client');
 
-    api.mainModule('index.js');
+    api.mainModule('index.js', 'client');
 });
