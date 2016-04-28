@@ -14,12 +14,12 @@ Package.onUse(function (api) {
     ]);
 
     Npm.depends({
+        'react-dom': '0.14.6',
         'react-addons-css-transition-group': '0.14.7'
     });
 
     api.addFiles([
         'client/stylesheets/_tools.css',
-
         'client/stylesheets/AskModal.css',
         'client/stylesheets/Toasts.css'
     ], 'client');
