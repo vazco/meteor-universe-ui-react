@@ -9,8 +9,7 @@ Package.onUse(function (api) {
     api.versionsFrom('1.3.2.3');
     
     api.use([
-        'modules@0.5.0-modules.8',
-        'ecmascript@0.4.0-modules.8',
+        'ecmascript',
         'universe:utilities-react@1.0.0-beta1'
     ]);
 
