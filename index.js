@@ -11,6 +11,7 @@ import {Message} from './components/Message.jsx';
 import {Modal} from './components/Modal.jsx';
 import {Modals} from './components/Modals.jsx';
 import {Toasts} from './components/Toasts.jsx';
+import {ConfirmTooltip} from './components/ConfirmTooltip.jsx';
 
 export {
     Actions,
@@ -25,5 +26,6 @@ export {
     Message,
     Modal,
     Modals,
-    Toasts
+    Toasts,
+    ConfirmTooltip
 };
