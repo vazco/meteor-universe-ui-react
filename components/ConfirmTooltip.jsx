@@ -2,6 +2,13 @@ import React from 'react';
 
 export const ConfirmTooltip = React.createClass({
     displayName: 'confirmTooltip',
+    propTypes: {
+        action: React.PropTypes.func.isRequired,
+        buttonText: React.PropTypes.oneOfType([
+            React.PropTypes.element,
+            React.PropTypes.node
+        ]).isRequired
+    },
     getInitialState () {
         return {
             popover: false
