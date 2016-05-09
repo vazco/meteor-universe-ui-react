@@ -1,4 +1,5 @@
 import {Actions} from './components/Actions.jsx';
+import {AskModal} from './components/AskModal.jsx';
 import {Button} from './components/Button.jsx';
 import {Column} from './components/Column.jsx';
 import {Container} from './components/Container.jsx';
@@ -14,6 +15,7 @@ import {Toasts} from './components/Toasts.jsx';
 
 export {
     Actions,
+    AskModal,
     Button,    
     Column,
     Container,
