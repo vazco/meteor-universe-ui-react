@@ -1,7 +1,7 @@
 Package.describe({
     name: 'universe:ui-react',
     summary: 'UI components for UniCMS.',
-    version: '0.2.1',
+    version: '0.2.2',
     readme: 'README.md'
 });
 
@@ -23,5 +23,5 @@ Package.onUse(function (api) {
         'client/stylesheets/Toasts.css'
     ], 'client');
 
-    api.mainModule('index.js', 'client');
+    api.mainModule('index.js');
 });
