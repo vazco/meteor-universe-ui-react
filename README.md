@@ -18,6 +18,7 @@
 * Modal
 * Modals
 * Toasts
+* ConfirmTooltip
 
 <br>
 <br>
@@ -114,4 +115,33 @@ const modalId = Toasts.create({
 });
 
 Toasts.remove(modalId);
+```
+### ConfirmTooltip
+```js
+import {ConfirmTooltip} from 'meteor/universe:ui-react';
+
+// EXAMPLE 1 BASIC
+
+<ConfirmTooltip
+    buttonText='TEST'
+    action={this.onRemove}
+    confirmText='Are you sure ?'
+/>
+
+
+// EXAMPLE 2 FULL
+
+<ConfirmTooltip
+    wrapperSpecialClass="someClass"
+    buttonText={<span><i className='trash outline icon'></i>Remove</span>}
+    buttonClass="ui negative button"
+    action={this.onRemove}
+    cancelAction={this.onCancel}
+    confirmText='Are you sure ?'
+    acceptButtonText="YES"
+    acceptButtonClass="ui positive button"
+    cancelButtonText="NO"
+    cancelButtonClass="ui button"
+    position="bottom-left"
+/>
 ```

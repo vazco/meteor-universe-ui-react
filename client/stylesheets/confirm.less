@@ -1,0 +1,154 @@
+.confirmation-tip-wrapper{
+    display: inline-block;
+    position: relative;
+    .confirmation-tip-box{
+        display: block !important;
+        float: none !important;
+        position: absolute !important;
+        padding: 10px;
+        background-color: #ccc;
+        box-shadow: 1px 1px 3px #555;
+        width: 250px;
+        z-index: 9999;
+        .confirmation-tip-message{
+            display: block;
+            text-align: center;
+        }
+        .confirmation-tip-buttons{
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+            a{
+                width: 80px;
+            }
+        }
+        &.bottom-left{
+            top: ~'calc(100% + 15px)';
+            right: 0px;
+            &:after{
+                position: absolute;
+                display: block;
+                top: -15px;
+                right: 20px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid #ccc;
+            }
+        }
+        &.bottom-right{
+            top: ~'calc(100% + 15px)';
+            left: 0px;
+            &:after{
+                position: absolute;
+                display: block;
+                top: -15px;
+                left: 20px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid #ccc;
+            }
+        }
+        &.top-left{
+            bottom: ~'calc(100% + 15px)';
+            right: 0px;
+            &:after{
+                position: absolute;
+                display: block;
+                bottom: -15px;
+                right: 20px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 15px solid #ccc;
+            }
+        }
+        &.top-right{
+            bottom: ~'calc(100% + 15px)';
+            left: 0px;
+            &:after{
+                position: absolute;
+                display: block;
+                bottom: -15px;
+                left: 20px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 15px solid #ccc;
+            }
+        }
+        &.left-top{
+            bottom: 0px;
+            right: ~'calc(100% + 15px)';
+            &:after{
+                position: absolute;
+                display: block;
+                bottom: 0px;
+                right: -15px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-left: 15px solid #ccc;
+                border-bottom: 15px solid transparent;
+            }
+        }
+        &.left-bottom{
+            top: 0px;
+            right: ~'calc(100% + 15px)';
+            &:after{
+                position: absolute;
+                display: block;
+                top: 0px;
+                right: -15px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-left: 15px solid #ccc;
+                border-bottom: 15px solid transparent;
+            }
+        }
+        &.right-top{
+            bottom: 0px;
+            left: ~'calc(100% + 15px)';
+            &:after{
+                position: absolute;
+                display: block;
+                bottom: 0px;
+                right: -15px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-right: 15px solid #ccc;
+                border-bottom: 15px solid transparent;
+            }
+        }
+        &.right-bottom{
+            top: 0px;
+            left: ~'calc(100% + 15px)';
+            &:after{
+                position: absolute;
+                display: block;
+                top: 0px;
+                left: -15px;
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-top: 15px solid transparent;
+                border-right: 15px solid #ccc;
+                border-bottom: 15px solid transparent;
+            }
+        }
+    }
+}
