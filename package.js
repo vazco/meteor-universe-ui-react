@@ -18,21 +18,22 @@ Package.onUse(function (api) {
     });
 
     api.addFiles([
-        'components/Actions.jsx',
-        'components/AskModal.jsx',
-        'components/Button.jsx',
-        'components/Column.jsx',
-        'components/Container.jsx',
-        'components/Content.jsx',
-        'components/Divider.jsx',
-        'components/Grid.jsx',
-        'components/Header.jsx',
-        'components/Icon.jsx',
-        'components/Message.jsx',
-        'components/Modal.jsx',
-        'components/Modals.jsx',
-        'components/Toasts.jsx',
-        'components/ConfirmTooltip.jsx'
+        'index.js'
+        //'components/Actions.jsx',
+        //'components/AskModal.jsx',
+        //'components/Button.jsx',
+        //'components/Column.jsx',
+        //'components/Container.jsx',
+        //'components/Content.jsx',
+        //'components/Divider.jsx',
+        //'components/Grid.jsx',
+        //'components/Header.jsx',
+        //'components/Icon.jsx',
+        //'components/Message.jsx',
+        //'components/Modal.jsx',
+        //'components/Modals.jsx',
+        //'components/Toasts.jsx',
+        //'components/ConfirmTooltip.jsx'
     ]);
 
     api.addFiles([
