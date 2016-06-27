@@ -13,27 +13,8 @@ Package.onUse(function (api) {
         'less'
     ]);
 
-    Npm.depends({
-        'react-addons-css-transition-group': '0.14.7'
-    });
-
     api.addFiles([
         'index.js'
-        //'components/Actions.jsx',
-        //'components/AskModal.jsx',
-        //'components/Button.jsx',
-        //'components/Column.jsx',
-        //'components/Container.jsx',
-        //'components/Content.jsx',
-        //'components/Divider.jsx',
-        //'components/Grid.jsx',
-        //'components/Header.jsx',
-        //'components/Icon.jsx',
-        //'components/Message.jsx',
-        //'components/Modal.jsx',
-        //'components/Modals.jsx',
-        //'components/Toasts.jsx',
-        //'components/ConfirmTooltip.jsx'
     ]);
 
     api.addFiles([
@@ -41,7 +22,7 @@ Package.onUse(function (api) {
 
         'client/stylesheets/AskModal.css',
         'client/stylesheets/Toasts.css',
-        'client/stylesheets/confirm.less',
+        'client/stylesheets/confirm.less'
     ], 'client');
 
     api.mainModule('index.js');
