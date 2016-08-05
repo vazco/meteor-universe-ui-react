@@ -20,8 +20,8 @@ export const Modals = React.createClass({
             Modals._modalsUpdate();
         },
 
-        register ({name, component}) {
-            Modals._modals[name] = {component, props: {visible: false}};
+        register ({name, component, props}) {
+            Modals._modals[name] = {component, props: {visible: false, ...props}};
             Modals._modalsUpdate();
         }
     },
